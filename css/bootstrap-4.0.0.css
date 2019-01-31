@@ -418,7 +418,17 @@ h6, .h6 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
+
+  
 }
+
+.display-4-light {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color:#007bff;
+}
+
 
 hr {
   margin-top: 1rem;
@@ -591,6 +601,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  opacity:0.5;
 }
 
 .row {
@@ -4213,6 +4224,7 @@ tbody.collapse.show {
   }
 }
 
+
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
@@ -4938,7 +4950,8 @@ tbody.collapse.show {
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	background-position:center center;
-	background-size:cover  
+	background-size:cover;  
+	opacity:1;
 }
 
 @media (min-width: 576px) {
@@ -5865,7 +5878,6 @@ button.close {
   overflow: hidden;
 }
 
-
 .carousel-item {
   position: relative;
   display: none;
@@ -5955,6 +5967,24 @@ button.close {
   text-align: center;
   opacity: 0.5;
 }
+
+.carousel-control-prev-top,
+.carousel-control-next-top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
 
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
@@ -6063,6 +6093,18 @@ button.close {
   text-align: center;
 }
 
+.carousel-caption-title {
+  position: absolute;
+  right: 20%;
+  bottom: 20px;
+  left: 20%;
+  top:10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: black;
+  text-align: center;
+}
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -10421,9 +10463,19 @@ div.alert a:hover {
   text-decoration: none;
 }
 
+	#featured .flexslider .slide-caption {
+		width: 90%; 
+		padding: 2%; 
+		position: absolute; 
+		left: 0; 
+		bottom: -40px; 
+
+
 /*************************************************
  *  Dark themed components
  **************************************************/
+
+
 
 body.dark,
 .dark .docs-toc-link,
@@ -10568,6 +10620,19 @@ body.dark,
 .dark a.badge:hover {
   color: rgba(255, 255, 255, .68);
 }
+
+/* ===================================
+5. Section: Featured
+==================================== */
+
+#featured{
+	width: 100%;
+	background:#fcfcfc;
+	position:relative;
+	margin:0;
+	padding:0;
+}
+
 
 /* ===================================
 6. Sliders
@@ -10887,9 +10952,6 @@ body.dark,
 	}
 
 }
-
-
-
 
 
 
