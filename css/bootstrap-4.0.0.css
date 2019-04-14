@@ -604,6 +604,15 @@ pre code {
   opacity:0.5;
 }
 
+.container-fluid2 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity:0.3;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5963,7 +5972,7 @@ button.close {
   -ms-flex-pack: center;
   justify-content: center;
   width: 30%;
-  color: #6c757d;;
+  color: black;
   text-align: center;
   opacity: 0.5;
 }
@@ -6018,13 +6027,13 @@ button.close {
 {
   content: '>';
   font-size: 55px;
-  color: red;
+  color: black
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 55px;
-  color: red;
+  color: black;
 }
 .carousel-indicators {
   position: absolute;
