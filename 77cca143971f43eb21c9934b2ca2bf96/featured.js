@@ -16,6 +16,7 @@ function LoadContent() {
                         id
                         imageName
                         fileName
+                        linkName
                         authors
                         pageLink
                         project
